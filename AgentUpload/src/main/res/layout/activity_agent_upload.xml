@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Furnished"
+            android:id="@+id/checkBox"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clean"
+            android:id="@+id/checkBox2"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignLeft="@+id/checkBox"
+            android:layout_marginTop="14dp"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The best home?"
+            android:id="@+id/checkBox3"
+            android:layout_below="@+id/checkBox2"
+            android:layout_alignLeft="@+id/checkBox2"
+            android:layout_marginTop="18dp"/>
+
+    <EditText
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes:"
+            android:id="@+id/textView"
+            android:layout_above="@+id/editText"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignRight="@+id/checkBox3"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Pictures"
+            android:id="@+id/button"
+            android:onClick="btnUploadPictures_Click"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
