@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
     <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,17 +35,17 @@
             android:layout_width="600px"
             android:layout_height="wrap_content"
             android:id="@+id/editText"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"/>
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Notes:"
             android:id="@+id/textView"
-            android:layout_above="@+id/editText"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignRight="@+id/checkBox3"/>
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/editText"/>
 
     <Button
             android:layout_width="wrap_content"
@@ -54,7 +53,16 @@
             android:text="Upload Pictures"
             android:id="@+id/button"
             android:onClick="btnUploadPictures_Click"
-            android:layout_marginTop="18dp"
             android:layout_below="@+id/editText"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox4"
+            android:layout_below="@+id/checkBox3"
+            android:layout_alignLeft="@+id/checkBox3"
+            android:layout_marginTop="11dp"/>
 </RelativeLayout>

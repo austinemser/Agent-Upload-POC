@@ -15,12 +15,12 @@ public class AgentUploadMainActivity extends Activity {
         Intent loginIntent = new Intent("com.example.agentupload.LoginActivity");
         startActivity(loginIntent);
         setContentView(R.layout.activity_agent_upload);
-
         //test first commit
     }
 
     public void btnUploadPictures_Click(View v)
     {
-        finish();
+        Intent choosePictureSourceIntent = new Intent("com.example.agentupload.ChoosePictureSourceActivity");
+        startActivity(choosePictureSourceIntent);
     }
 }
